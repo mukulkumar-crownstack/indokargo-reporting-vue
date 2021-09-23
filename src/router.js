@@ -30,6 +30,30 @@ export default new Router({
                     beforeEnter: authGuard,
                     component: () => import('@/views/locations/Locations')
                 },
+                {
+                    path: '/qr/:qr_code/:locationId',
+                    name: "Asset Code",
+                    beforeEnter: authGuard,
+                    component: () => import('@/views/locations/AssetCode'),
+                },
+                {
+                    path: '/store/:storeId',
+                    name: "Store",
+                    beforeEnter: authGuard,
+                    component: () => import('@/views/locations/Store'),
+                },
+                {
+                    path: '/active-movement-jobs',
+                    name: "Active Movement Jobs",
+                    beforeEnter: authGuard,
+                    component: () => import('@/views/active-movement-jobs/ActiveMovementJobs'),
+                },
+                {
+                    path: '/moved-jobs',
+                    name: "Moved Jobs",
+                    beforeEnter: authGuard,
+                    component: () => import('@/views/moved-jobs/MovedJobs'),
+                }
             ]
         }
     ]

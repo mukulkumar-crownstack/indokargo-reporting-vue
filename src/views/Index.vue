@@ -59,4 +59,16 @@ export default {
   width: 250px;
   max-width: calc(100vw - 125px);
 }
+.md-app-content {
+  background: #eee;
+}
+.md-menu-content {
+  background: #fff;
+  margin-top: 48px;
+  /* max-width: 280px !important; */
+}
+.md-ripple > span {
+  left: 50px;
+  top: 16px;
+}
 </style>

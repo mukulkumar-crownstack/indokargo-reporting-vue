@@ -32,7 +32,6 @@ export default {
     }
     EventBus.$on(ACTIONS.SNACKBAR, (message) => {
       this.snackbarMessage = message;
-      console.log(message);
       this.show = true;
     });
   },

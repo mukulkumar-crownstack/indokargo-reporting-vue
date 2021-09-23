@@ -10,6 +10,7 @@ export default class API_CONSTANTS {
     static GET_COUNTRIES = `${API_CONSTANTS.BASE_URL}/countries`;
     static GET_CITY = `${API_CONSTANTS.BASE_URL}/cities`;
     static GET_LOCATIONS = `${API_CONSTANTS.BASE_URL}/customer/asset-report/locations`;
+    static GET_LOCATIONS_SUMMARY = `${API_CONSTANTS.BASE_URL}/customer/asset-report/summary`;
     static GET_ASSET_USER = `${API_CONSTANTS.BASE_URL}/customer/asset-user`;
     static GET_LOCATION = `${API_CONSTANTS.BASE_URL}/customer/address`;
     static GET_LOCATION_QR = `${API_CONSTANTS.BASE_URL}/customer/asset-report/qrcode`;

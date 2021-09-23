@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 /**
  * @param {string} path
  * @returns {Boolean}
@@ -46,10 +48,10 @@ export function validAlphabets(str) {
  * @param {string} email
  * @returns {Boolean}
  */
-export function validEmail(email) {
-    const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    return reg.test(email)
-}
+// export function validEmail(email) {
+//     const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+//     return reg.test(email)
+// }
 
 /**
  * @param {string} str
@@ -71,4 +73,10 @@ export function isArray(arg) {
         return Object.prototype.toString.call(arg) === '[object Array]'
     }
     return Array.isArray(arg)
+}
+
+export function formatDate(value, format = 'MMM DD, YYYY hh:mm a') {
+    if (value) {
+        return moment(String(value)).format(format);
+    }
 }

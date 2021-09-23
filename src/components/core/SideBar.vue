@@ -54,13 +54,13 @@ export default {
         }
         return [
           ...arr,
-          { name: "Locations", path: "locations", icon: "dashboard" },
+          { name: "Locations", path: "/locations", icon: "dashboard" },
           {
             name: "Active Movement Jobs",
-            path: "active-movement-jobs",
+            path: "/active-movement-jobs",
             icon: "dashboard",
           },
-          { name: "Moved Jobs", path: "moved-jobs", icon: "dashboard" },
+          { name: "Moved Jobs", path: "/moved-jobs", icon: "dashboard" },
         ];
       },
     },
